@@ -4,18 +4,251 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
 <tt>
-Build started on: <u>15-09-2023 at 18:26.42</u><br />
-Build ended on: <u>15-09-2023 at 18:26.47</u><p />
+Build started on: <u>13-11-2023 at 17:36.06</u><br />
+Build ended on: <u>13-11-2023 at 17:36.12</u><p />
 <b>-------------- Build: Debug in Primer (compiler: GNU GCC Compiler)---------------</b><br />
 g++.bat -Wall -fexceptions  -g     -c C:\Users\root\source\repos\Мультфильм\Primer\main.cpp -o obj\Debug\main.o<br />
 ------------------------------------------------------------------------------------------------------<br />
-Compilation is OK<br />
+Compilation ERRORS:<br />
+<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawSkyDay()':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:3:6: warning: no previous declaration for 'void drawSkyDay()' [-Wmissing-declarations]</font><br />
+ void drawSkyDay()<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawSkyNight()':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:11:6: warning: no previous declaration for 'void drawSkyNight()' [-Wmissing-declarations]</font><br />
+ void drawSkyNight()<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawLand()':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:19:6: warning: no previous declaration for 'void drawLand()' [-Wmissing-declarations]</font><br />
+ void drawLand()<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawSun(int, int, float)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:27:6: warning: no previous declaration for 'void drawSun(int, int, float)' [-Wmissing-declarations]</font><br />
+ void drawSun(int x, int y, float razm)<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawHouse(int, float, int, int, COLORREF)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:35:6: warning: no previous declaration for 'void drawHouse(int, float, int, int, COLORREF)' [-Wmissing-declarations]</font><br />
+ void drawHouse(int x, float razm, int xDver, int yDver, COLORREF colorWin)<br />
+      ^<br />
+In file included from C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:1:0:<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:40:35: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txRectangle (x,300*razm,x+250*razm,500*razm);   //Стена<br />
+                                   ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:46: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     POINT krysha[3] = {{x, 300*razm}, {x+125*razm, 200*razm}, {x+250*razm, 300*razm}};//Крыша<br />
+                                              ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:70: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     POINT krysha[3] = {{x, 300*razm}, {x+125*razm, 200*razm}, {x+250*razm, 300*razm}};//Крыша<br />
+                                                                      ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:31: warning: narrowing conversion of '(razm * 3.0e+2f)' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT krysha[3] = {{x, 300*razm}, {x+125*razm, 200*razm}, {x+250*razm, 300*razm}};//Крыша<br />
+                               ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:31: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:41: warning: narrowing conversion of '((float)x + (razm * 1.25e+2f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT krysha[3] = {{x, 300*razm}, {x+125*razm, 200*razm}, {x+250*razm, 300*razm}};//Крыша<br />
+                                         ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:41: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:55: warning: narrowing conversion of '(razm * 2.0e+2f)' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT krysha[3] = {{x, 300*razm}, {x+125*razm, 200*razm}, {x+250*razm, 300*razm}};//Крыша<br />
+                                                       ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:55: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:65: warning: narrowing conversion of '((float)x + (razm * 2.5e+2f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT krysha[3] = {{x, 300*razm}, {x+125*razm, 200*razm}, {x+250*razm, 300*razm}};//Крыша<br />
+                                                                 ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:65: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:79: warning: narrowing conversion of '(razm * 3.0e+2f)' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT krysha[3] = {{x, 300*razm}, {x+125*razm, 200*razm}, {x+250*razm, 300*razm}};//Крыша<br />
+                                                                               ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:42:79: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+In file included from C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:1:0:<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:45:23: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txRectangle (x+30*razm,360*razm,x+100*razm,420*razm);    //Окно<br />
+                       ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:45:43: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txRectangle (x+30*razm,360*razm,x+100*razm,420*razm);    //Окно<br />
+                                           ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:47:24: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txRectangle (x+140*razm,360*razm,x+200*razm,480*razm);    //Проем<br />
+                        ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:47:44: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txRectangle (x+140*razm,360*razm,x+200*razm,480*razm);    //Проем<br />
+                                            ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:51: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                   ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:75: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                                           ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:105: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                                                                         ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:94: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                                                              ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:121: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                                                                                         ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:46: warning: narrowing conversion of '((float)x + (razm * 2.0e+2f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                              ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:46: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:60: warning: narrowing conversion of '(razm * 3.6e+2f)' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                            ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:60: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:70: warning: narrowing conversion of '((float)x + (razm * 2.0e+2f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                                      ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:70: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:84: warning: narrowing conversion of '(razm * 4.8e+2f)' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                                                    ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:84: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:98: warning: narrowing conversion of '((float)(x + -300) + ((float)xDver * razm))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                                                                  ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:98: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:116: warning: narrowing conversion of '((float)yDver + (razm * 1.2e+2f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]</font><br />
+     POINT dver[4] = {{x-300+xDver, yDver}, {x+200*razm, 360*razm}, {x+200*razm, 480*razm}, {x-300+xDver*razm, yDver+120*razm}};<br />
+                                                                                                                    ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:49:116: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]</font><br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawBike(int, double)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:53:6: warning: no previous declaration for 'void drawBike(int, double)' [-Wmissing-declarations]</font><br />
+ void drawBike(int x, double a)<br />
+      ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:63:9: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+     x1=x+20*cos((a)*3.14/180);<br />
+         ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:64:11: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+     y1=530+20*sin((a)*3.14/180);<br />
+           ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:65:9: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+     x2=x+20*cos((a+120)*3.14/180);<br />
+         ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:66:11: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+     y2=530+20*sin((a+120)*3.14/180);<br />
+           ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:67:9: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+     x3=x+20*cos((a+240)*3.14/180);<br />
+         ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:68:11: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+     y3=530+20*sin((a+240)*3.14/180);<br />
+           ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawCloud(int)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:83:6: warning: no previous declaration for 'void drawCloud(int)' [-Wmissing-declarations]</font><br />
+ void drawCloud(int x)<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawTree(int)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:93:6: warning: no previous declaration for 'void drawTree(int)' [-Wmissing-declarations]</font><br />
+ void drawTree(int x)<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawForest()':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:104:6: warning: no previous declaration for 'void drawForest()' [-Wmissing-declarations]</font><br />
+ void drawForest()<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawFlyer(HDC, int)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:113:6: warning: no previous declaration for 'void drawFlyer(HDC, int)' [-Wmissing-declarations]</font><br />
+ void drawFlyer(HDC flyer, int x)<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawMan(int, int, int, int, float, COLORREF)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:118:6: warning: no previous declaration for 'void drawMan(int, int, int, int, float, COLORREF)' [-Wmissing-declarations]</font><br />
+ void drawMan(int x, int y, int xRightNoga, int xLeftNoga, float razm, COLORREF Color)<br />
+      ^<br />
+In file included from C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:1:0:<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:122:23: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txCircle (x, y-30*razm, 20*razm);       //голова<br />
+                       ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:123:20: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y-10*razm, x,                    y+50*razm);    //тело<br />
+                    ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:123:53: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y-10*razm, x,                    y+50*razm);    //тело<br />
+                                                     ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:124:31: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y,         x-20*razm,            y+30*razm);    //правая рука<br />
+                               ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:124:53: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y,         x-20*razm,            y+30*razm);    //правая рука<br />
+                                                     ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:125:31: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y,         x+20*razm,            y+30*razm);    //левая рука<br />
+                               ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:125:53: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y,         x+20*razm,            y+30*razm);    //левая рука<br />
+                                                     ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:126:20: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y+50*razm, x-20*razm+xRightNoga, y+80*razm);    //правая нога<br />
+                    ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:126:31: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y+50*razm, x-20*razm+xRightNoga, y+80*razm);    //правая нога<br />
+                               ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:126:36: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y+50*razm, x-20*razm+xRightNoga, y+80*razm);    //правая нога<br />
+                                    ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:126:53: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y+50*razm, x-20*razm+xRightNoga, y+80*razm);    //правая нога<br />
+                                                     ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:127:20: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y+50*razm, x+20*razm+xLeftNoga,  y+80*razm);    //левая нога<br />
+                    ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:127:31: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y+50*razm, x+20*razm+xLeftNoga,  y+80*razm);    //левая нога<br />
+                               ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:127:36: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y+50*razm, x+20*razm+xLeftNoga,  y+80*razm);    //левая нога<br />
+                                    ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:127:53: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+     txLine(x, y+50*razm, x+20*razm+xLeftNoga,  y+80*razm);    //левая нога<br />
+                                                     ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawDialog(int, int, const char*, COLORREF)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:130:6: warning: no previous declaration for 'void drawDialog(int, int, const char*, COLORREF)' [-Wmissing-declarations]</font><br />
+ void drawDialog(int x, int y, const char* text, COLORREF Color)<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'void drawTitle(int, float, const char*)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:144:6: warning: no previous declaration for 'void drawTitle(int, float, const char*)' [-Wmissing-declarations]</font><br />
+ void drawTitle(int y, float razm, const char* text)<br />
+      ^<br />
+C:\Users\root\source\repos\Мультфильм\Primer\main.cpp: In function 'int main()':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:267:17: warning: conversion to 'float' from 'double' may alter its value [-Wconversion]</font><br />
+         razmMan += 0.005;<br />
+                 ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:282:38: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                      ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:282:50: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                                  ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:301:38: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                      ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:301:50: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                                  ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:321:38: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                      ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:321:50: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                                  ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:356:38: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                      ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:356:50: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                                  ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:373:38: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                      ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Мультфильм\Primer\main.cpp:373:50: warning: 'int {anonymous}::TX::random(int)' is deprecated (declared at c:\codeblocks\mingw\include\txlib.h:14958) [-Wdeprecated-declarations]</font><br />
+         drawMan(xMan, yMan, random(30), random(20), razmMan, RGB(222, 186, 100));<br />
+                                                  ^<br />
 ------------------------------------------------------------------------------------------------------<br />
 Autosaving to the Git repository in C:/Users/root/source/repos//Primer/.git-auto/... <br />
 g++.exe  -o bin\Debug\Primer.exe obj\Debug\main.o     -mwindows<br />
-Output size is 2,16 MB<br />
-<font color="#0000ff">Process terminated with status 0 (0 minutes, 5 seconds)</font><br />
-<font color="#0000ff">0 errors, 0 warnings (0 minutes, 5 seconds)</font><br />
+Output size is 2,18 MB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minutes, 6 seconds)</font><br />
+<font color="#0000ff">0 errors, 79 warnings (0 minutes, 6 seconds)</font><br />
 </tt>
 </body>
 </html>
